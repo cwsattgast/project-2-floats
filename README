@@ -1,0 +1,3 @@
+This is a version of Treehouse Front End Tech Degree Program's project 2 made with floats for the portfolio items.
+
+This repository is for troubleshooting the problem with :nth-child in the three-column media qurey. The two-column media query works correctly with :nth-child(2n), but it breaks in the three-column version.
