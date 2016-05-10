@@ -1,0 +1,326 @@
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- GENERAL ---- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Meriweather Sans', sans-serif;
+  background-color: #f8f8f8;
+  color: #606060;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: .9em;
+}
+
+h3 {
+  font-size: .8em;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: .03em;
+  line-height: 1.5;
+  color: #888;
+}
+
+a {
+  text-decoration: none;
+  color: #606060;
+}
+
+a:hover {
+  color: #e0ab26;
+}
+
+ol, ul {
+  padding: 0;
+}
+
+li {
+  font-size: .9em;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr.faded-edge {
+   border: 0;
+   height: 1px;
+   width: 90%;
+   background: #444;
+   background-image: linear-gradient(to right, #ccc, #444, #ccc);
+}
+
+/* ---- Wrappers ---- */
+
+#wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#wrapper-white {
+  margin: 0 auto;
+  background-color: white;
+  padding: 0 5%;
+}
+
+/* ---- Main Header ---- */
+
+.main-header {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.name {
+  padding: .3em 0;
+}
+
+.menu {
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;
+  background-color: white;
+  margin: 0 auto 5px;
+  max-width: 90%;
+  padding: 12px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* ---- Clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* ============================
+      Main body styles
+==============================*/
+
+/* ---- Header styles ---- */
+
+.profile-pic {
+  margin: 1.6em auto 1em;
+  max-width: 64%;
+  text-align: center;
+}
+
+.main-text {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+/* ---- Portfolio styles ---- */
+
+.portfolio {
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.portfolio h2 {
+  text-transform: uppercase;
+  padding: 45px 0 35px;
+}
+
+.portfolio h3 {
+  font-size: 1.1em;
+  font-weight: 400;
+  padding: 10px 0 2px;
+}
+
+.portfolio p {
+  margin-bottom: 40px;
+}
+
+/* ---- Contact styles ---- */
+
+.contact {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+  font-size: .9em;
+  padding: 45px 0 25px;
+}
+
+.contact p {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto 15px;
+}
+
+/* ---- Footer styles ---- */
+
+.footer {
+  margin: 10px auto 15px;
+  max-width: 90%;
+}
+
+.student {
+  float: left;
+
+}
+
+.student h2 {
+  display: inline-block;
+}
+
+.back-to-top {
+  float:right;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: none;
+}
+
+/* ============================
+      Media Queries
+==============================*/
+
+@media screen and (min-width: 720px) {
+
+  #wrapper-white {
+    padding: 0 4%;
+  }
+
+  .name {
+    padding: 40px 0 3px;
+  }
+
+  .menu li {
+    background: transparent;
+    max-width: 90%;
+    padding: 0 15px 15px;
+    display: inline-block;
+  }
+
+  .profile {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-pic {
+    float: right;
+    width: 40%;
+    padding-bottom: 35px;
+  }
+
+  .main-text {
+    float: left;
+    text-align: left;
+    width: 60%;
+    padding: .5em 2em 0 0;
+  }
+
+  .portfolio-item {
+    float: left;
+    width: 48%;
+    margin: 1%;
+    transition: all .3s;
+  }
+
+  .portfolio-item:nth-child(2n) {
+    clear: left;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .footer-links {
+    float: right;
+    display: block;
+  }
+
+  .footer-links ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0;
+    padding: 0;
+  }
+
+  .footer-links li {
+    display: inline-block;
+  }
+
+  .footer-links a {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 10px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .name {
+    padding: 40px 0 3px;
+  }
+
+  .menu li {
+    background: transparent;
+    max-width: 90%;
+    padding: 0 15px 15px;
+    display: inline-block;
+  }
+
+  .profile {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .profile-pic {
+    float: right;
+    width: 40%;
+    padding-bottom: 35px;
+  }
+
+  .main-text {
+    float: left;
+    text-align: left;
+    width: 60%;
+    padding: .5em 2em 0 0;
+  }
+
+  .portfolio-item {
+    width: 31%;
+  }
+
+  .portfolio-item:nth-child(2n) {
+    clear: none;
+  }
+
+  .portfolio-item:nth-child(3n) {
+    clear: left;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+}
